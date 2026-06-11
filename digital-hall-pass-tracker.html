@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Track Hall Passes Digitally (Free Tools That Actually Work) — WhoLeft</title>
+  <meta name="description" content="Paper hall passes go missing, timers get ignored, and you never really know how long a student has been gone. Here's how teachers are going digital — for free.">
+  <meta property="og:title" content="How to Track Hall Passes Digitally (Free Tools That Actually Work)">
+  <meta property="og:description" content="Paper hall passes go missing, timers get ignored, and you never really know how long a student has been gone. Here's how teachers are going digital — for free.">
+  <meta property="og:url" content="https://usewholeft.com/digital-hall-pass-tracker">
+  <link rel="canonical" href="https://usewholeft.com/digital-hall-pass-tracker">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #fff;
+      color: #1a1a1a;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 48px;
+      background: #1B5E20;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .logo { font-size: 24px; font-weight: 700; letter-spacing: -0.5px; color: white; text-decoration: none; }
+
+    nav a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 15px;
+      margin-left: 32px;
+    }
+    nav a:hover { color: white; }
+
+    @media (max-width: 600px) {
+      header { padding: 20px 24px; }
+    }
+
+    .article-hero {
+      background: #1B5E20;
+      color: white;
+      padding: 64px 24px 72px;
+      text-align: center;
+    }
+
+    .article-hero .eyebrow {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #A5D6A7;
+      margin-bottom: 16px;
+    }
+
+    .article-hero h1 {
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 700;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      max-width: 760px;
+      margin: 0 auto 20px;
+    }
+
+    .article-hero .dek {
+      font-size: clamp(16px, 2vw, 19px);
+      color: #A5D6A7;
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .meta {
+      margin-top: 24px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .article-body {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .article-body h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #1B5E20;
+      margin: 48px 0 16px;
+      line-height: 1.2;
+    }
+
+    .article-body h3 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 32px 0 12px;
+    }
+
+    .article-body p {
+      font-size: 17px;
+      line-height: 1.75;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .article-body ul, .article-body ol {
+      margin: 0 0 24px 24px;
+    }
+
+    .article-body li {
+      font-size: 17px;
+      line-height: 1.75;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .article-body strong {
+      color: #1a1a1a;
+      font-weight: 700;
+    }
+
+    .callout {
+      background: #f1f8f1;
+      border-left: 4px solid #1B5E20;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+      margin: 32px 0;
+    }
+
+    .callout p {
+      margin: 0;
+      font-size: 16px;
+      color: #2a2a2a;
+    }
+
+    .cta-block {
+      background: #1B5E20;
+      color: white;
+      border-radius: 20px;
+      padding: 40px 36px;
+      text-align: center;
+      margin: 56px 0 0;
+    }
+
+    .cta-block h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: white;
+      margin: 0 0 12px;
+    }
+
+    .cta-block p {
+      color: #A5D6A7;
+      font-size: 16px;
+      margin-bottom: 28px;
+    }
+
+    .cta-group {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      background: white;
+      color: #1B5E20;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.2s;
+    }
+    .btn-primary:hover { opacity: 0.9; }
+
+    .btn-secondary {
+      border: 2px solid rgba(255,255,255,0.4);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: border-color 0.2s;
+    }
+    .btn-secondary:hover { border-color: white; }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .comparison-table th {
+      background: #1B5E20;
+      color: white;
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 700;
+    }
+
+    .comparison-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #e8e8e8;
+      color: #333;
+    }
+
+    .comparison-table tr:nth-child(even) td { background: #f9f9f9; }
+
+    .check { color: #1B5E20; font-weight: 700; }
+    .cross { color: #c0392b; font-weight: 700; }
+
+    footer {
+      background: #0D1F0E;
+      padding: 32px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    footer p { color: rgba(255,255,255,0.4); font-size: 14px; }
+    footer a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 14px; }
+    footer a:hover { color: white; }
+
+    @media (max-width: 600px) {
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="/">WhoLeft</a>
+  <nav>
+    <a href="/#features">Features</a>
+    <a href="/#pricing">Pricing</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="tos.html">Terms</a>
+  </nav>
+</header>
+
+<section class="article-hero">
+  <p class="eyebrow">Classroom Management</p>
+  <h1>How to Track Hall Passes Digitally (Free Tools That Actually Work)</h1>
+  <p class="dek">Paper passes go missing, timers get ignored, and you never really know how long a student has been gone. Here's how teachers are going digital.</p>
+  <p class="meta">By the WhoLeft Team &nbsp;·&nbsp; June 2026 &nbsp;·&nbsp; 5 min read</p>
+</section>
+
+<article class="article-body">
+
+  <p>It happens every class period. A student asks to use the bathroom, you scribble something on a paper pass, and thirty minutes later you realize they never came back — and you have no idea exactly when they left.</p>
+
+  <p>If you're still relying on a clipboard, a paper log, or just your memory to track who's in the hallway, you're not alone. But there's a better way, and it doesn't require a new district software rollout or an IT request.</p>
+
+  <h2>Why paper hall passes don't work anymore</h2>
+
+  <p>Paper passes made sense when classrooms were simpler. But today's classrooms deal with real accountability pressures — documentation for parents, administrators, and in some cases legal requirements. A handwritten slip doesn't cut it.</p>
+
+  <p>Here's what teachers deal with every day using paper systems:</p>
+
+  <ul>
+    <li><strong>No timestamps.</strong> You think a student left "around 10:20" but you can't say for sure.</li>
+    <li><strong>No automatic alerts.</strong> A student is 25 minutes late coming back and you're mid-lesson — no one flags it.</li>
+    <li><strong>No log history.</strong> A student is constantly disappearing for 30+ minutes at a time. You have a feeling, but no data to back it up in a parent meeting.</li>
+    <li><strong>Multiple students out at once.</strong> Who's actually in the building right now?</li>
+  </ul>
+
+  <p>A digital hall pass tracker solves all of this. The question is: what tool do you actually use?</p>
+
+  <h2>Your options for going digital</h2>
+
+  <h3>Option 1: A Google Form or spreadsheet</h3>
+
+  <p>Some teachers build a simple Google Form where students type their name and the time. It works, sort of. But there's no timer, no alert when someone is overdue, and you have to manually check a spreadsheet to see who's out. You've replaced paper chaos with digital chaos.</p>
+
+  <h3>Option 2: A full school-wide platform</h3>
+
+  <p>District-managed hall pass platforms exist and can be powerful — but they usually require an admin to set them up, IT to integrate with your student information system, and a budget line. If your school doesn't have one, you're out of luck. And even if they do, the teacher-facing interface is often clunky.</p>
+
+  <h3>Option 3: A lightweight classroom tool</h3>
+
+  <p>This is the sweet spot for most teachers. A simple app you set up yourself, in five minutes, on a device that lives on your desk. No IT request. No login required for students. Just tap to send a student out, and the timer starts.</p>
+
+  <div class="callout">
+    <p><strong>What most teachers actually need:</strong> something that runs on a phone or a spare laptop, doesn't require students to create accounts, and tells you immediately when someone has been gone too long.</p>
+  </div>
+
+  <h2>What to look for in a digital hall pass app</h2>
+
+  <p>Before downloading anything, here are the features that actually matter in a real classroom:</p>
+
+  <ul>
+    <li><strong>Countdown timer with overdue alerts</strong> — you need to know the moment a student crosses your time limit, not when you happen to check</li>
+    <li><strong>Student self sign-out</strong> — students should be able to tap in and out themselves without interrupting your lesson</li>
+    <li><strong>Automatic log with timestamps</strong> — every pass should be recorded automatically, with exact times in and out</li>
+    <li><strong>No student accounts</strong> — students shouldn't need to log in to anything; this is a teacher tool, not a student platform</li>
+    <li><strong>Works offline</strong> — school Wi-Fi is unreliable; your hall pass tracker shouldn't be</li>
+    <li><strong>Multiple passes at once</strong> — you may need to send two students to different places at the same time</li>
+  </ul>
+
+  <h2>A free digital hall pass tracker built by a teacher</h2>
+
+  <p>WhoLeft is a hall pass tracker designed around exactly this workflow. A student asks to leave — you tap their name, set a destination, and a countdown starts. When they're overdue, you see it immediately. When they return, the pass closes and the log entry is saved automatically.</p>
+
+  <p>It runs on Android phones and tablets, or in any desktop browser on a spare classroom laptop or Chromebook. Students don't need accounts. There's no setup beyond opening the app.</p>
+
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Paper pass</th>
+        <th>Google Form</th>
+        <th>WhoLeft</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Automatic timestamps</td>
+        <td class="cross">✗</td>
+        <td class="check">✓</td>
+        <td class="check">✓</td>
+      </tr>
+      <tr>
+        <td>Overdue alerts</td>
+        <td class="cross">✗</td>
+        <td class="cross">✗</td>
+        <td class="check">✓</td>
+      </tr>
+      <tr>
+        <td>See who's out right now</td>
+        <td class="cross">✗</td>
+        <td class="cross">✗</td>
+        <td class="check">✓</td>
+      </tr>
+      <tr>
+        <td>Student self sign-out</td>
+        <td class="cross">✗</td>
+        <td class="check">✓</td>
+        <td class="check">✓</td>
+      </tr>
+      <tr>
+        <td>Log history</td>
+        <td class="cross">✗</td>
+        <td class="check">✓</td>
+        <td class="check">✓</td>
+      </tr>
+      <tr>
+        <td>No student accounts needed</td>
+        <td class="check">✓</td>
+        <td class="check">✓</td>
+        <td class="check">✓</td>
+      </tr>
+      <tr>
+        <td>Works offline</td>
+        <td class="check">✓</td>
+        <td class="cross">✗</td>
+        <td class="check">✓</td>
+      </tr>
+      <tr>
+        <td>Setup time</td>
+        <td>None</td>
+        <td>30+ min</td>
+        <td>Under 5 min</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>The free tier covers one pass at a time and keeps your last 20 log entries — enough to try it out for a full week with no commitment.</p>
+
+  <h2>How to set it up in under 5 minutes</h2>
+
+  <ol>
+    <li><strong>Open WhoLeft</strong> on your phone, tablet, or classroom computer. No download required on desktop — it runs in any browser.</li>
+    <li><strong>Set your admin PIN.</strong> This keeps students out of settings while giving you full control.</li>
+    <li><strong>Add your students.</strong> First name is enough. No email, no account, no personal data stored anywhere.</li>
+    <li><strong>Set your pass time limit.</strong> Most teachers use 5–8 minutes for a bathroom pass.</li>
+    <li><strong>Start your first pass.</strong> Tap a student's name, they're logged out with a countdown running. When they return, they tap back in.</li>
+  </ol>
+
+  <p>That's it. The log builds itself from there.</p>
+
+  <div class="callout">
+    <p><strong>Pro tip:</strong> Keep WhoLeft open on a dedicated device on your desk — an old phone propped up, a spare Chromebook, or a tablet in a stand. It becomes a permanent fixture, like a clock, that you glance at rather than actively manage.</p>
+  </div>
+
+  <h2>The bottom line</h2>
+
+  <p>Going digital with hall passes doesn't have to mean a district software rollout or a complicated setup. A lightweight digital hall pass tracker that runs on hardware you already have, requires nothing from students, and keeps an automatic log is all most classrooms need.</p>
+
+  <p>WhoLeft is free to try today — no account, no credit card, no IT ticket required.</p>
+
+  <div class="cta-block">
+    <h2>Try WhoLeft free today</h2>
+    <p>Works on Android and in any desktop browser. No login required for students.</p>
+    <div class="cta-group">
+      <a href="https://play.google.com/store/apps/details?id=com.wgriff.wholeft" class="btn-primary">▶ Get it on Google Play</a>
+      <a href="https://app.usewholeft.com" class="btn-secondary">Use in Browser</a>
+    </div>
+  </div>
+
+</article>
+
+<footer>
+  <p>© 2026 W/Griff Netventures. All rights reserved.</p>
+  <div style="display:flex; gap:24px;">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="tos.html">Terms of Service</a>
+  </div>
+</footer>
+
+</body>
+</html>
