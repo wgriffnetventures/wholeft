@@ -14,17 +14,11 @@ WhoLeft is designed for classroom use. Student names entered into the app are st
 
 ## Purchases
 
-WhoLeft Plus is a paid subscription processed separately per platform. We do not collect or store payment information.
-
-- **Android:** Purchases are processed by Google Play and managed by RevenueCat.
-- **iOS:** Purchases are processed by the Apple App Store and managed by RevenueCat.
-- **Desktop/Browser:** Purchases are processed by LemonSqueezy.
+WhoLeft Plus is a paid subscription processed separately per platform. We do not collect or store payment information. Purchases are handled by the respective platform's payment processor.
 
 ## Third party services
 
-WhoLeft uses RevenueCat to manage in-app purchases on Android and iOS. RevenueCat may collect anonymous purchase analytics. See RevenueCat's privacy policy at revenuecat.com/privacy.
-
-The desktop web app uses LemonSqueezy for payment processing. See LemonSqueezy's privacy policy at lemonsqueezy.com/privacy.
+WhoLeft uses third party services to manage in-app purchases and payment processing. These services may collect anonymous purchase analytics in accordance with their own privacy policies.
 
 ## Contact
 
