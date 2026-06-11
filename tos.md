@@ -12,8 +12,8 @@ WhoLeft is a classroom hall pass tracker. All data entered into the app — incl
 
 WhoLeft Plus is a paid subscription ($9.99/year) that unlocks additional features. Purchases are made separately for each platform and are not transferable between platforms:
 
-- **Android and iOS:** Purchased through Google Play or the Apple App Store. Managed by your app store account.
-- **Desktop/Browser:** Purchased through LemonSqueezy. A license key is issued to you by email. Your license key may be activated on up to 3 devices.
+- **Android and iOS:** Purchased through the platform's app store and managed by your app store account.
+- **Desktop/Browser:** Purchased online. A license key is issued to you by email and may be activated on up to 3 devices.
 
 One purchase unlocks WhoLeft Plus on that platform for that device or account. Purchasing on one platform does not unlock features on another platform.
 
