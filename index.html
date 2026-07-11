@@ -69,6 +69,7 @@
       gap: 16px;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
       margin-top: 8px;
     }
 
@@ -87,9 +88,8 @@
     }
     .btn-primary:hover { opacity: 0.9; }
 
-    .store-badge-apple { height: 52px; display: inline-block; transition: opacity 0.2s; }
-    .store-badge-google { height: 76px; display: inline-block; transition: opacity 0.2s; margin: -12px 0; }
-    .store-badge-apple:hover, .store-badge-google:hover { opacity: 0.85; }
+    .store-badge { height: 52px; display: inline-block; transition: opacity 0.2s; }
+    .store-badge:hover { opacity: 0.85; }
 
     .btn-secondary {
       border: 2px solid rgba(255,255,255,0.4);
@@ -295,10 +295,10 @@
   </p>
   <div class="cta-group">
     <a href="https://apps.apple.com/app/id6788464486">
-      <img src="badge-app-store.svg" alt="Download on the App Store" class="store-badge-apple">
+      <img src="badge-app-store.svg" alt="Download on the App Store" class="store-badge">
     </a>
     <a href="https://play.google.com/store/apps/details?id=com.wgriff.wholeft">
-      <img src="badge-google-play.png" alt="Get it on Google Play" class="store-badge-google">
+      <img src="badge-google-play.png" alt="Get it on Google Play" class="store-badge">
     </a>
     <a href="https://app.UseWhoLeft.com" class="btn-secondary">Use in Browser</a>
   </div>
