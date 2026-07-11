@@ -261,6 +261,9 @@
     @media (max-width: 600px) {
       header { padding: 20px 24px; }
       footer { flex-direction: column; text-align: center; }
+      .cta-group { flex-direction: column; align-items: center; }
+      .cta-group a { width: 100%; display: flex; justify-content: center; }
+      .btn-secondary { text-align: center; }
     }
   </style>
 </head>
@@ -291,11 +294,11 @@
     WhoLeft is a hall pass tracker built by a teacher, for teachers. Send a student out, set a time limit, and know when they're overdue.
   </p>
   <div class="cta-group">
-    <a href="https://play.google.com/store/apps/details?id=com.wgriff.wholeft">
-      <img src="badge-google-play.png" alt="Get it on Google Play" class="store-badge-google">
-    </a>
     <a href="https://apps.apple.com/app/id6788464486">
       <img src="badge-app-store.svg" alt="Download on the App Store" class="store-badge-apple">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.wgriff.wholeft">
+      <img src="badge-google-play.png" alt="Get it on Google Play" class="store-badge-google">
     </a>
     <a href="https://app.UseWhoLeft.com" class="btn-secondary">Use in Browser</a>
   </div>
