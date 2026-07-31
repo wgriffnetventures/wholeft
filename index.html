@@ -215,11 +215,11 @@
     .pricing .lead { color: #A5D6A7; font-size: 18px; margin-bottom: 48px; }
 
     .pricing-cards {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(220px, 270px));
       gap: 24px;
       justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
+      align-items: stretch;
       max-width: 900px;
       margin: 0 auto;
     }
@@ -228,18 +228,7 @@
       background: rgba(255,255,255,0.1);
       border-radius: 20px;
       padding: 36px 32px;
-      flex: 1;
-      min-width: 220px;
-      max-width: 270px;
       border: 1px solid rgba(255,255,255,0.15);
-    }
-
-    .pricing-plus-column {
-      flex: 1;
-      min-width: 220px;
-      max-width: 270px;
-      display: flex;
-      flex-direction: column;
     }
 
     .pricing-card.featured {
@@ -279,6 +268,7 @@
     .pricing-card-cta:hover { opacity: 0.9; }
 
     .pricing-note {
+      grid-column: 2;
       margin-top: 14px;
       font-size: 13px;
       line-height: 1.5;
@@ -306,6 +296,8 @@
       .cta-group a { width: 100%; display: flex; justify-content: center; }
       .btn-secondary { text-align: center; }
       .feature-grid { grid-template-columns: 1fr; }
+      .pricing-cards { grid-template-columns: minmax(0, 270px); }
+      .pricing-note { grid-column: 1; }
     }
   </style>
 </head>
@@ -415,22 +407,20 @@
         <li>PIN &amp; emoji sign-out</li>
       </ul>
     </div>
-    <div class="pricing-plus-column">
-      <div class="pricing-card featured">
-        <p class="platform-label" style="color:#1B5E20;">All platforms</p>
-        <h3>WhoLeft Plus</h3>
-        <div class="price">$9.99 <span>/ year</span></div>
-        <ul>
-          <li>Everything in Free, plus:</li>
-          <li>Up to 6 passes at once</li>
-          <li>Custom pass timer</li>
-          <li>Full log history</li>
-          <li>CSV export</li>
-        </ul>
-        <a href="https://app.usewholeft.com?upgrade=true" class="pricing-card-cta">Buy for desktop browser</a>
-      </div>
-      <p class="pricing-note">This purchase unlocks the desktop browser version. Mobile upgrades are available in the iPhone/iPad and Android apps.</p>
+    <div class="pricing-card featured">
+      <p class="platform-label" style="color:#1B5E20;">All platforms</p>
+      <h3>WhoLeft Plus</h3>
+      <div class="price">$9.99 <span>/ year</span></div>
+      <ul>
+        <li>Everything in Free, plus:</li>
+        <li>Up to 6 passes at once</li>
+        <li>Custom pass timer</li>
+        <li>Full log history</li>
+        <li>CSV export</li>
+      </ul>
+      <a href="https://app.usewholeft.com?upgrade=true" class="pricing-card-cta">Buy for desktop browser</a>
     </div>
+    <p class="pricing-note">This purchase unlocks the desktop browser version. Mobile upgrades are available in the iPhone/iPad and Android apps.</p>
   </div>
 </section>
 
