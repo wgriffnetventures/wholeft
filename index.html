@@ -178,7 +178,7 @@
 
     .feature-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 32px;
     }
 
@@ -294,6 +294,7 @@
       .cta-group { flex-direction: column; align-items: center; }
       .cta-group a { width: 100%; display: flex; justify-content: center; }
       .btn-secondary { text-align: center; }
+      .feature-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
